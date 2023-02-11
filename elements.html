@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    p {
+      margin: 10px;
+      padding: 10px;
+      background-color: lightgray;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="addElement">Tambah Paragraf Baru</button>
+</body>
+
+<script>
+  // Mendapatkan referensi elemen button
+  var button = document.getElementById("addElement");
+
+  // Menambahkan event listener pada button
+  button.addEventListener("click", function () {
+    // Membuat elemen baru
+    var newParagraph = document.createElement("p");
+
+    // Menambahkan teks ke elemen baru
+    newParagraph.innerHTML = "Ini adalah paragraf baru";
+
+    // Menambahkan elemen baru ke DOM
+    document.body.appendChild(newParagraph);
+  });
+
+</script>
+
+</html>

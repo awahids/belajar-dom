@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    p {
+      margin: 10px;
+      padding: 10px;
+      background-color: lightgray;
+    }
+  </style>
+</head>
+
+<body>
+  <p id="textWithHTML"></p>
+  <p id="plainText"></p>
+  <button id="changeText">Ubah Teks</button>
+</body>
+
+<script>
+  // Mendapatkan referensi elemen p dengan ID "textWithHTML" dan "plainText"
+  var textWithHTML = document.getElementById("textWithHTML");
+  var plainText = document.getElementById("plainText");
+
+  // Mendapatkan referensi elemen button
+  var button = document.getElementById("changeText");
+
+  // Menambahkan event listener pada button
+  button.addEventListener("click", function () {
+    // Menetapkan teks dengan format HTML menggunakan innerHTML
+    textWithHTML.innerHTML = "Ini adalah <b>teks</b> dengan format HTML";
+
+    // Menetapkan teks dalam format plain text menggunakan innerText
+    plainText.innerText = "Ini adalah teks dalam format plain text";
+  });
+
+</script>
+
+</html>

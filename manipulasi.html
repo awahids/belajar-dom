@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contoh Manipulasi Data</title>
+</head>
+
+<body>
+  <h1 id="judul">Judul Awal</h1>
+  <p id="paragraf">Paragraf Awal</p>
+
+  <script>
+    // Mengubah isi elemen h1
+    var judul = document.getElementById("judul");
+    judul.innerHTML = "Judul Baru";
+
+    // Mengubah isi elemen p
+    var paragraf = document.getElementById("paragraf");
+    paragraf.innerHTML = "Paragraf Baru";
+
+    // Menambah elemen div baru
+    var newDiv = document.createElement("div");
+    newDiv.innerHTML = "Ini adalah elemen div baru";
+    document.body.appendChild(newDiv);
+
+    // Mengubah gaya elemen h1
+    judul.style.color = "red";
+    judul.style.fontSize = "32px";
+
+    // Mengubah atribut elemen h1
+    judul.setAttribute("class", "judul-baru");
+  </script>
+</body>
+
+</html>

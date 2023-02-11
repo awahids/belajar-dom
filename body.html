@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contoh Penggunaan document.body</title>
+</head>
+
+<body>
+  <h1>Ini adalah halaman contoh</h1>
+  <p id="paragraf-satu">Paragraf pertama</p>
+  <p id="paragraf-dua">Paragraf kedua</p>
+
+  <script>
+    // Mendapatkan warna latar belakang dari body
+    var backgroundColor = document.body.style.backgroundColor;
+    console.log("Warna latar belakang saat ini: " + backgroundColor);
+
+    // Menetapkan warna latar belakang baru untuk body
+    document.body.style.backgroundColor = "lightblue";
+    console.log("Warna latar belakang baru: " + document.body.style.backgroundColor);
+
+    // Menambahkan elemen div baru ke body
+    var newDiv = document.createElement("div");
+    newDiv.innerHTML = "Ini adalah elemen baru";
+    document.body.appendChild(newDiv);
+  </script>
+</body>
+
+</html>
